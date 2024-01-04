@@ -12,10 +12,8 @@ const styles = {
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
     padding: "20px",
     textAlign: "center",
-    maxWidth: "600px",
-    width: "100%",
-    margin: "auto",
-    marginTop: "20px"
+    maxWidth: "400px",
+    width: "100%"
   },
   title: {
     color: "#333"
@@ -109,7 +107,9 @@ const LanguageTranslator = () => {
         onChange={setTargetLanguage}
       />
 
-      <TextInput label="textInput" value={textInput} onChange={setTextInput} />
+    <div  style={{marginTop:"20px"}}></div>
+          <label>Text Input</label>
+      <TextInput label="textInput"  value={textInput} onChange={setTextInput} />
 
       <button
         style={buttonStyle}
